@@ -45,7 +45,7 @@ jobs:
             exit 1
           fi
           zip -r app.zip . -x '*.git*' 'node_modules' '*.env'
-          aws s3 cp app.zip s3://my-eb-bucket-<your-unique-id>/app-$GITHUB_SHA.zip
+          aws s3 cp app.zip s3://my-eb-bucket-12345/app-$GITHUB_SHA.zip
           aws elasticbeanstalk create-application-version \
             --application-name express-aws-ci-cd-demo \
             --version-label $GITHUB_SHA \
