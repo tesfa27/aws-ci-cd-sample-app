@@ -56,7 +56,6 @@ jobs:
           aws elasticbeanstalk update-environment \
             --environment-name demo-env \
             --version-label $GITHUB_SHA \
-            --timeout 600
 
       - name: Post-deploy health check
         run: |
