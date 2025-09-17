@@ -60,4 +60,4 @@ jobs:
       - name: Post-deploy health check
         run: |
           sleep 60
-          curl -f -L http://demo-env.eba-5mfn5dj.eu-north-1.elasticbeanstalk.com/health || echo "Health check failed but proceeding "
+          curl -f -L http://demo-env.eba-7smfn5dj.eu-north-1.elasticbeanstalk.com/health || echo "Health check failed but proceeding "
