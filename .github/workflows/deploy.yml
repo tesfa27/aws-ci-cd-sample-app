@@ -49,7 +49,7 @@ jobs:
           aws elasticbeanstalk create-application-version \
             --application-name express-aws-ci-cd-demo \
             --version-label $GITHUB_SHA \
-            --source-bundle S3Bucket=my-eb-bucket-<your-unique-id>,S3Key=app-$GITHUB_SHA.zip
+            --source-bundle S3Bucket=my-eb-bucket-12345,S3Key=app-$GITHUB_SHA.zip
 
       - name: Deploy to Elastic Beanstalk
         run: |
